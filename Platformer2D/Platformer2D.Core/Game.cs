@@ -166,9 +166,8 @@ namespace Platformer2D
             {
                 Exit();
             }
-
             // TODO: Make the F11 Key (or key of your choosing) to toggle Fullscreen (Tip1: if statement) (Tip2: use graphics object)
-            if (keyboardState.IsKeyDown(Keys.F11))
+            else if (keyboardState.IsKeyDown(Keys.F11))
             {
                 graphics.ToggleFullScreen();
             }
