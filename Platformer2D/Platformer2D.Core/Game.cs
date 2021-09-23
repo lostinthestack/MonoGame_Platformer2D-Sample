@@ -162,8 +162,16 @@ namespace Platformer2D
 
 #if !NETFX_CORE
             // TODO: Make the Escape Key Exit the application (Tip1: if statement) (Tip2: use keyboardState object)
+            if (keyboardState.IsKeyDown(Keys.Escape))
+            {
+                Exit();
+            }
 
             // TODO: Make the F11 Key (or key of your choosing) to toggle Fullscreen (Tip1: if statement) (Tip2: use graphics object)
+            if (keyboardState.IsKeyDown(Keys.F11))
+            {
+                graphics.ToggleFullScreen();
+            }
 
 #endif
             bool continuePressed =
